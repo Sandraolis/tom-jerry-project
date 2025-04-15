@@ -10,11 +10,12 @@ This guide will help you through the basics of using GitHub, including installin
 2. **Install Git**:
 - Follow the installation instructions for your OS `operating system`
 - Once installed, open a terminal or command prompt and verify the installation by running this command: 
-
-`git --version`
+``` bash
+git --version
+```
 - This should display the installed version of Git
 
-![git version](./Img/git%20version.png)
+![git version](./images/git%20version.png)
 
 ## Login to Github
 1. **Create a GitHub Account**:
@@ -23,7 +24,7 @@ This guide will help you through the basics of using GitHub, including installin
 2. ## Login to Github:
 - Click [here](https://github.com/login) to login using your login details.
 
-![github signin](./Img/github%20signin.png)
+![github signin](./images/github%20signin.png)
 
 
 # Create Github Repository:
@@ -35,7 +36,7 @@ This guide will help you through the basics of using GitHub, including installin
 - Check the box to "Initialize this repository with a README".
 - Click "Create repository".
 
-![++sign](./Img/++%20sign.png)
+![++sign](./images/++%20sign.png)
 Create Repository
 
 # Clone The Repository:
@@ -44,47 +45,48 @@ Create Repository
 - On the repository page, click on the `Code` button.
 - Copy the HTTP URL (eg., https://github.com/your-username/tom-jerry.git). 
 
-![code](./Img/Code.png)
+![code](./images/Code.png)
 
 2. ### Clone the Repository locally.
 - Open your terminal or command prompt.
 - Create a folder named *Git_project*, using the below command.
-
-`mkdir Git-Project`
-
+``` bash
+mkdir Git-Project
+```
 - Navigate into the `Git-Project` folder by running the below command.
-
-`cd Git-Project`
-
+``` bash
+cd Git-Project
+```
 - Clone the repository by using the copied URL:
-
-`git clone https://github.com/your-username/tom-jerry.git`
-
+``` bash
+git clone https://github.com/your-username/tom-jerry.git
+```
 - Navigate into the cloned repository:
-
-`cd tom-jerry`
-
-![CD 2](./Img/CD%202.png)
+``` bash
+cd tom-jerry`
+```
+![CD 2](./images/CD%202.png)
 
 # Make Change and Commit.
 1. Create a new file:
 - Create an empty `index.html` file by using the below command.
-
-`touch index.html`
+``` bash
+touch index.html
+```
 - Add some content to the file using a text editor or IDE.
 
-![index](./Img/index.html2.png)
+![index](./images/index.html2.png)
 
 2. ### Check Git status
 - Run the following command to see the changes that have not been staged: 
-
-`git status`
-
-![unsatged](./Img/not%20staged.png)
+``` bash
+git status`
+```
+![unsatged](./images/not%20staged.png)
 
 - its showing in red and statimg that it has not be staged, so to stage and track it, we use the command `git add .` and `git status` again to know if it has been staged and tracked.
 
-![git add .](./Img/git%20add%20..png)
+![git add .](./images/git4git.png)
 
 - The above picture shows that it has been staged and tracked after using the `git add .` command.
 
@@ -92,7 +94,7 @@ Create Repository
  - Commit the changes with a message.
  git commit -m "this is my first commit"
 
- ![commit](./Img/commit%20-m.png)
+ ![commit](./images/commit%20n%20push.png)
 
  # Push Change To Github
  1. ### push to Github
@@ -101,12 +103,12 @@ Create Repository
  - Using this command
  `git push origin main`
 
-  ![git push](./Img/git%20push.png)
+  ![git push](./images/commit%20n%20push.png)
 
   2. ### Verify on Github
   - Go to your repository on GitHub and verify that the index.html file has been added.
 
-  ![index file](./Img/index%20file%20on%20git.png)
+  ![index file](./images/index.html2.png)
 
   # PART 2: Simulating Tom and Jerry's Team Work.
 This guide will walk you through the basics of using GitHub, including navigating a project directory, creating branches, making changes, pulling lastest changes from the central repository, and collaborating with others. We'll simulate workflows for two contributors, Tom and Jerry.
@@ -129,7 +131,6 @@ This guide will walk you through the basics of using GitHub, including navigatin
 
   4. ***Verify the new branch*** by running git branch again. You should see the newly created branch `listed.
 
-  ![git branch](./Img/git%20branch.png)
 
   ## Making Changes and Staging Them:
 
@@ -143,7 +144,7 @@ This guide will walk you through the basics of using GitHub, including navigatin
 
   `git status`
 
-  ![new git](./Img/new%20git.png)
+  ![new git](./images/not%20staged.png)
 
   4. You can see from the picture above that the new comment has not bwwn staged, so use the `git add .` command to stage it.
 
@@ -151,7 +152,6 @@ This guide will walk you through the basics of using GitHub, including navigatin
 
   5. Confirm the staged changes by running `git status` again. The changes should now be staged and ready to commit.
 
-  ![staged](./Img/staged.png)
 
   ## Commit And Push Changes:
   `git commit -m "update the index.html navigation bar"
@@ -159,7 +159,6 @@ This guide will walk you through the basics of using GitHub, including navigatin
   6. Push the Branch to github using this command:
   `git push origin update-navigation`
 
-  ![git update](./Img/git%20update%20navigation.png)
 
   # Simulating Jerry's Contribution
   1. Switch back to main branch by running this command.
@@ -169,11 +168,8 @@ This guide will walk you through the basics of using GitHub, including navigatin
   3. Make necessary changes to the index.html file
   4. check if the changes has been stages by running `git status`
 
-  ![gitgit](./Img/gitgitgit.png)
+  ![gitgit](./images/gitgitgit.png)
 
   5. Stage the change by running the command `git add .`
   6. Commit it by using the command `git commit -m "This is Jerry commit"
   7. Push it to your github repository by using the command `git push origin add-contact-info.
-
-  ![git4git](./Img/git4git.png)
-  
